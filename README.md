@@ -5,13 +5,17 @@
 This script performs photometry on Hubble space telescope imagery in 2 filters (F555W and F336W) of the clobular cluster NGC 1261. It removes cosmic rays, identifies stellar sources, performs photometry on the sources to extract the magnitudes, and produces a Hertzprung Russel (HR) Diagram (more specifically, a colour (F336 - F555) vs magnitude (F555) diagram.
 
 ## Brief interpretation of results:
-The end HR diagram produced is somewhat decent. It bears decent resemblance to the provided diagram, and others for similar NGC objects, such as for NGC 1261 by more competent astronomers (found here: https://groups.dfa.unipd.it/ESPG/hstobs.html)
+The end HR diagram produced is somewhat decent. It bears decent resemblance to the provided diagram:
+
+<img width="400" height="400" alt="image" src="https://github.com/user-attachments/assets/3a047fe4-9448-4079-a677-33ba4461fd18" />
+
+It also resembles others for similar NGC objects, such as for NGC 1261 by more competent astronomers (found here: https://groups.dfa.unipd.it/ESPG/hstobs.html)
 <img width="400" height="400" alt="image" src="https://github.com/user-attachments/assets/c9ca91f6-6fac-4ab1-b69d-3edf08b94e6f" />
 
-However, the diagram has a lot of scatter, and some anomalous objects can also be clearly seen in several places. 
+However, my diagram has a lot of scatter, and anomalous detections can also be clearly seen in several places. The important features are still somewhat visible, however. 
 <img width="400" height="400" alt="hrdiagramofNGC1261" src="https://github.com/user-attachments/assets/cab8eddd-df82-4f8f-815b-92e1efe119e8" />
 
-(Note: Above diagram is same from the 'Results with defaults' folder.) 
+(Note: Above diagram is same from the 'Results with defaults' folder.)
 
 This certainly indicates that the thresholds used, most likely those used for PSF characteristic fitting, were poorly chosen. Given more time, further refinement of these could have tightened the spread of the plot.
 
