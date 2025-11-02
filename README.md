@@ -41,49 +41,48 @@ SDL-HST-Assignment-Daragh-Haughton/
 
 ## Usage
   This code can be ran by:
-  1. Simplest case:
-      Defaults (percentile=93, saves CSV, no plot)
-      $ python myscript.py
+  1. Simplest case (Defaults (percentile=93, saves CSV, no plot)):
+      - $ python myscript.py
 
   2. With a custom data folder
-      $ python myscript.py /path/to/data
-      $ python myscript.py ../hst_data
+      - $ python myscript.py /path/to/data
+      - $ python myscript.py ../hst_data
 
   3. Custom data folder AND percentile value
-      $ python myscript.py data 95
-      $ python myscript.py /path/to/data 99
-      $ python myscript.py data 90
+      - $ python myscript.py data 95
+      - $ python myscript.py /path/to/data 99
+      - $ python myscript.py data 90
 
   4. No CSV saving
-      $ python myscript.py nocsv
-      $ python myscript.py data nocsv
-      $ python myscript.py data 95 nocsv
+      - $ python myscript.py nocsv
+      - $ python myscript.py data nocsv
+      - $ python myscript.py data 95 nocsv
 
   5. Generate overlay plot
-      $ python myscript.py plot
-      $ python myscript.py data plot
-      $ python myscript.py data 95 plot
+      - $ python myscript.py plot
+      - $ python myscript.py data plot
+      - $ python myscript.py data 95 plot
 
   6. Combine flags (the order does not matter for the flags)
-      $ python myscript.py data 95 nocsv plot
-      $ python myscript.py data plot nocsv
-      $ python myscript.py nocsv plot
-      $ python myscript.py data 99 plot nocsv
+      - $ python myscript.py data 95 nocsv plot
+      - $ python myscript.py data plot nocsv
+      - $ python myscript.py nocsv plot
+      - $ python myscript.py data 99 plot nocsv
 
 ##  Outputs
 The script will generate the following:
 1. hrdiagramofNGC1261.png - A HR diagram
 2. SuccessfulCandPos.png - OPTIONAL - A plot showing a transformed image and the coordinates of the final candidates overlaid - Only produced if plot flag used
 3. 5 CSV Files - OPTIONAL:
-   i) Accepted (Quality) - filter: F336W.csv
-   ii) Accepted (Quality) - filter: F555W.csv
-   iii) Rejected (Quality) - filter: F336W.csv
-   iv) Rejected (Quality) - filter: F555W.csv
-   v) Finalcatalogue.csv
+   - i) Accepted (Quality) - filter: F336W.csv
+   - ii) Accepted (Quality) - filter: F555W.csv
+   - iii) Rejected (Quality) - filter: F336W.csv
+   - iv) Rejected (Quality) - filter: F555W.csv
+   - v) Finalcatalogue.csv
 
    The accepeted CSV files contain the sources accepeted based on PSF filters being passed
-   The rejected CSV files contain the sources rejected based on PSF filters not being passed, as    well as the reason for their not passing
-   The final candidates CSV file contains the Accepeted sources which also passed the cross         filter position match check.
+   The rejected CSV files contain the sources rejected based on PSF filters not being passed, as well as the reason for their not passing
+   The final candidates CSV file contains the Accepeted sources which also passed the cross filter position match check.
 
    These files are only produced if the 'nocsv' flag is not used.
 
@@ -101,7 +100,7 @@ The script will generate the following:
 
 # Notes:
 - NB: The percentile threshold value significantly impacts runtime:
-At default value (93), which produces the best plot and best number of sources, the current runtime is 29 minutes! Many attempts were made to reduce this, although these resulted in poorer diagrams and lower overall source populations. 
+- At default value (93), which produces the best plot and best number of sources, the current runtime is 29 minutes! Many attempts were made to reduce this, although these resulted in poorer diagrams and lower overall source populations. 
 95 is a good threshold value for verifying the code works and produces a decent diagram, although this also has a long runtime of around 12 minutes. 
 
 - GenAI was used during this project, please see comments in code to see where, and what it was used for.
