@@ -93,7 +93,7 @@ The script will generate the following:
 7. Visualisation: HR diagram is generated for the successful candidates
 
 
-## Notes:
+# Notes:
 # NB: The percentile threshold value significantly impacts runtime:
 At default value (93), which produces the best plot and best number of sources, the current runtime is 29 minutes! Many attempts were made to reduce this, although these resulted in poorer diagrams and lower overall source populations. 
 
