@@ -5,11 +5,12 @@
 This script performs photometry on Hubble space telescope imagery in 2 filters (F555W and F336W) of the clobular cluster NGC 1261. It removes cosmic rays, identifies stellar sources, performs photometry on the sources to extract the magnitudes, and produces a Hertzprung Russel (HR) Diagram (more specifically, a colour (F336 - F555) vs magnitude (F555) diagram.
 
 ## Brief interpretation of results:
-The end HR diagram produced is somewhat decent. It bears decent resemblance to the provided diagram, and others for similar NGC objects, such as
-<img width="373" height="382" alt="image" src="https://github.com/user-attachments/assets/c9ca91f6-6fac-4ab1-b69d-3edf08b94e6f" />
- for NGC 1261 by more competent astronomers (found here: https://groups.dfa.unipd.it/ESPG/hstobs.html)
+The end HR diagram produced is somewhat decent. It bears decent resemblance to the provided diagram, and others for similar NGC objects, such as for NGC 1261 by more competent astronomers (found here: https://groups.dfa.unipd.it/ESPG/hstobs.html)
+<img width="400" height="400" alt="image" src="https://github.com/user-attachments/assets/c9ca91f6-6fac-4ab1-b69d-3edf08b94e6f" />
 
 However, the diagram has a lot of scatter, and some anomalous objects can also be clearly seen in several places. 
+<img width="400" height="400" alt="hrdiagramofNGC1261" src="https://github.com/user-attachments/assets/cab8eddd-df82-4f8f-815b-92e1efe119e8" />
+(Note: Above diagram is same from the 'Results with defaults' folder.) 
 
 The main issue with this code is the runtime. Many attempts were made to constrain this, however none worked very well. Using a high threshhold value obvioulsy produces a better runtime, but at the cost of decimating the star populations. 
 
