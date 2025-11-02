@@ -30,7 +30,7 @@ SDL-HST-Assignment-Daragh-Haughton/
 │ ├── file1.fits
 │ ├── file2.fits
 │ └── file3.fits
-├── example_outputs/
+├── Results with defaults/
 │ ├── hrdiagramofNGC1261.png
 │ ├── SuccessfulCandPos.png
 │ ├── Accepted (Quality) - filter: F336W
@@ -38,8 +38,8 @@ SDL-HST-Assignment-Daragh-Haughton/
 │ ├── Rejected (Quality) - filter: F336W
 │ ├── Rejected (Quality) - filter: F555W
 │ └── Finalcatalogue.csv
-├── myscript.py
-└── README.md
+├── README.md
+└── myscript.py
  ```
 
 
