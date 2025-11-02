@@ -4,6 +4,16 @@
 
 This script performs photometry on Hubble space telescope imagery in 2 filters (F555W and F336W) of the clobular cluster NGC 1261. It removes cosmic rays, identifies stellar sources, performs photometry on the sources to extract the magnitudes, and produces a Hertzprung Russel (HR) Diagram (more specifically, a colour (F336 - F555) vs magnitude (F555) diagram.
 
+## Brief interpretation of results:
+The end HR diagram produced is somewhat decent. It bears decent resemblance to the provided diagram, and others for similar NGC objects, such as
+<img width="373" height="382" alt="image" src="https://github.com/user-attachments/assets/c9ca91f6-6fac-4ab1-b69d-3edf08b94e6f" />
+ for NGC 1261 by more competent astronomers (found here: https://groups.dfa.unipd.it/ESPG/hstobs.html)
+
+However, the diagram has a lot of scatter, and some anomalous objects can also be clearly seen in several places. 
+
+The main issue with this code is the runtime. Many attempts were made to constrain this, however none worked very well. Using a high threshhold value obvioulsy produces a better runtime, but at the cost of decimating the star populations. 
+
+
 ## Repository Structure
  ```
 SDL-HST-Assignment-Daragh-Haughton/
@@ -104,7 +114,12 @@ The script will generate the following:
 95 is a good threshold value for verifying the code works and produces a decent diagram, although this also has a long runtime of around 12 minutes. 
 
 - GenAI was used during this project, please see comments in code to see where, and what it was used for.
-Specific model used: OpenAI's ChatGPT-4-Turbo. 
+Specific model used: OpenAI's ChatGPT-4-Turbo.
+
+- I also used information from these sources:
+- - https://iopscience.iop.org/article/10.1086/132582
+- - https://iopscience.iop.org/0004-637X/855/2/133/suppdata/apjaab101t3_ascii.txt?doi=10.3847/1538-4357/aab101
+- - https://hst-docs.stsci.edu/cosihb/chapter-7-exposure-time-calculator-etc/7-5-extinction-correction
 
 # Name: Daragh Haughton
 # Student No. 25237942
