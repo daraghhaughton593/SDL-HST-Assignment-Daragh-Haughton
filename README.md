@@ -6,17 +6,10 @@ This script performs photometry on Hubble space telescope imagery in 2 filters (
 
 ## Repository Structure
 SDL-HST-Assignment-Daragh-Haughton/
-├── data/
-│ ├── F336W/
-│ │ ├── file1.fits
-│ │ ├── file2.fits
-│ │ └── file3.fits
-│ └── F555W/
-│ ├── file1.fits
-│ ├── file2.fits
-│ └── file3.fits
-├── myscript.py
-└── README.md
+-data/F336W/file1.fits/file2.fits/file3.fits
+-data/F555W/file1.fits/file2.fits/file3.fits
+-myscript.py
+-README.md
 
 ## Requirements
 - astropy
@@ -98,5 +91,5 @@ Specific model used: OpenAI's ChatGPT-4-Turbo.
 
 # I have inlcuded a folder of previously generated results, with default parameters used
 
-## Name: Daragh Haughton
-## Student No. 25237942
+# Name: Daragh Haughton
+# Student No. 25237942
