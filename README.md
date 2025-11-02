@@ -5,11 +5,24 @@
 This script performs photometry on Hubble space telescope imagery in 2 filters (F555W and F336W) of the clobular cluster NGC 1261. It removes cosmic rays, identifies stellar sources, performs photometry on the sources to extract the magnitudes, and produces a Hertzprung Russel (HR) Diagram (more specifically, a colour (F336 - F555) vs magnitude (F555) diagram.
 
 ## Repository Structure
+ ```
 SDL-HST-Assignment-Daragh-Haughton/
--data/F336W/file1.fits/file2.fits/file3.fits
--data/F555W/file1.fits/file2.fits/file3.fits
--myscript.py
--README.md
+├── data/
+│ ├── F336W/
+│ │ ├── file1.fits
+│ │ ├── file2.fits
+│ │ └── file3.fits
+│ └── F555W/
+│ ├── file1.fits
+│ ├── file2.fits
+│ └── file3.fits
+├── example_outputs/
+│ ├── hrdiagramofNGC1261.png
+│ └── SuccessfulCandPos.png
+├── myscript.py
+└── README.md
+ ```
+
 
 ## Requirements
 - astropy
@@ -21,7 +34,7 @@ SDL-HST-Assignment-Daragh-Haughton/
   These can be installed with:
   pip install astropy numpy matplotlib scipy pandas
 
-  ## Usage
+## Usage
   This code can be ran by:
   1. Simplest case:
       Defaults (percentile=93, saves CSV, no plot)
