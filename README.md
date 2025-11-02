@@ -94,15 +94,15 @@ The script will generate the following:
 
 
 # Notes:
--NB: The percentile threshold value significantly impacts runtime:
+- NB: The percentile threshold value significantly impacts runtime:
 At default value (93), which produces the best plot and best number of sources, the current runtime is 29 minutes! Many attempts were made to reduce this, although these resulted in poorer diagrams and lower overall source populations. 
+
+# I have inlcuded a folder of previously generated results, with default parameters used
 
 95 is a good threshold value for verifying the code works and produces a decent diagram, although this also has a long runtime of around 12 minutes. 
 
--GenAI was used during the making of this, please see comments in code to see where, and what it was used for.
+- GenAI was used during the making of this, please see comments in code to see where, and what it was used for.
 Specific model used: OpenAI's ChatGPT-4-Turbo. 
-
-- I have inlcuded a folder of previously generated results, with default parameters used
 
 # Name: Daragh Haughton
 # Student No. 25237942
