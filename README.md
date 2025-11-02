@@ -10,7 +10,10 @@ The end HR diagram produced is somewhat decent. It bears decent resemblance to t
 
 However, the diagram has a lot of scatter, and some anomalous objects can also be clearly seen in several places. 
 <img width="400" height="400" alt="hrdiagramofNGC1261" src="https://github.com/user-attachments/assets/cab8eddd-df82-4f8f-815b-92e1efe119e8" />
+
 (Note: Above diagram is same from the 'Results with defaults' folder.) 
+
+This certainly indicates that the thresholds used, most likely those used for PSF characteristic fitting, were poorly chosen. Given more time, further refinement of these could have tightened the spread of the plot.
 
 The main issue with this code is the runtime. Many attempts were made to constrain this, however none worked very well. Using a high threshhold value obvioulsy produces a better runtime, but at the cost of decimating the star populations. 
 
